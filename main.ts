@@ -15,6 +15,10 @@
 // trailing stop armed at +10% and a 15% stop-loss; pyramid up to 3 adds of
 // 0.25 SOL into strength. A 0.01 SOL probe round trip keeps the entry honest
 // on coins the bot would otherwise never touch.
+//
+// Turn 2 (26 Nov 2026): entrypoint re-authored with write tools so the
+// transcripts account for the code (kit check thinking_reproduces/revised);
+// behavior unchanged — grade-local action log identical to the turn-1 run.
 
 import { runBot } from './vendor/makefun-bot.ts';
 import { createStrategy, DEFAULT_PARAMS } from './strategy.ts';
